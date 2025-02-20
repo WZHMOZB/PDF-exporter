@@ -43,9 +43,8 @@ def save_to_csv(data, csv_path):
     print(f"Data saved to {csv_path}")
 
 def main():
-    # Construct the file paths
     desktop_path = os.path.join(os.path.expanduser('~'), 'Desktop')
-    pdf_path = os.path.join(desktop_path, 'Manual_RBI_Organisational_Structure_January2025.pdf')
+    pdf_path = os.path.join(desktop_path, 'January2025.pdf')
     csv_path = os.path.join(desktop_path, 'output.csv')
     
     data = extract_units_from_pdf(pdf_path)
